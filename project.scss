@@ -8,11 +8,25 @@
 .main-container{
     min-height: 100vh;
     background-image: linear-gradient(90deg,#766fff, #88f1fe);
+        .middle-line::before{
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            width: 4px;
+            height: 80%;
+            right: 0;
+            left: 0;
+           margin: 0 auto;
+           align-items: center;
+        }
+    
     .home-pic{
         height: 500px;
         
+        
     }
 }
+
 
 .aboutme{
     height: 25vh;
@@ -71,3 +85,14 @@
     }
 }
 
+@media (max-width: 320px){
+    .middle-line::before{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .middle-line::before{
+        display: none;
+    }
+}
